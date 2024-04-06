@@ -31,6 +31,11 @@ function Main() {
               src="https://cdn.kobo.com/book-images/9b641bf6-ae44-4c1e-aa2b-e57ca746eb82/1200/1200/False/the-richest-man-in-babylon-31.jpg"
               alt=""
             />
+
+            <img
+              src="https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
