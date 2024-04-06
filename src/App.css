@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-right: 10px;
+  align-items: center;
+  gap: 40px;
+  background-color: blue;
+}
+
+.list-item {
+  align-self: auto;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.list-item a {
+  text-decoration: none;
+  padding: 4px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-item:last-child {
+  margin-right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item a:hover {
+  background-color: blue;
+  color: rgb(149, 149, 233);
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 16px;
+}
+.header span {
+  color: blue;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.header .fa-book {
+  color: blue;
+}
+.logo {
+  width: 30%;
+}
+.search-bar {
+  border: 1px solid rgb(212, 211, 211);
+  width: 20%;
+  height: auto;
+  outline: none;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+.search-bar input {
+  outline: none;
+  border: none;
+  padding: 2px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  width: 90%;
+}
+.search-bar i {
+  margin-right: 4px;
+  color: rgb(155, 155, 155);
+}
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.cart i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.cart i:hover {
+  color: rgb(152, 151, 151);
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.left-part {
+  width: 30%;
+  height: inherit;
+  padding: 30px;
+}
+.left-part p {
+  font-size: 12px;
+}
+.left-part .shop-btn {
+  background-color: blue;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.left-part .shop-btn:hover {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+.right-part {
+  width: 50%;
+  height: inherit;
+  padding: 40px;
+}
+
+.books {
+  width: 80%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.books img {
+  width: 20%;
+  height: auto;
+  box-shadow: 1px 1px 10px blue;
+}
+
+.books img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  gap: 10px;
+}
+.info-widget {
+  width: 20%;
+  height: auto;
+  border: 1px solid gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.info-widget i {
+  color: blue;
+  font-size: 28px;
+}
+.info-text {
+  font-size: 20px;
+  padding: 8px;
 }
