@@ -7,7 +7,7 @@ function Footer() {
           <span>Bookly</span>
         </div>
 
-        <div className="copyright"> © Copyright: Andrijana Sharkoska</div>
+        <div className="copyright"> ©Copyright: Andrijana Sharkoska</div>
       </div>
     </>
   );
