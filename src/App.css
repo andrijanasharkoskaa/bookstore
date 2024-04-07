@@ -20,7 +20,8 @@
   color: white;
 }
 
-.list-item a {
+.list-item:hover {
+  color: gray;
 }
 
 .list-item:last-child {
@@ -349,5 +350,24 @@ ul li span {
   font-weight: 800;
 }
 .review-text {
+  font-style: italic;
+}
+.about-us {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.about-us div > img {
+  width: 50%;
+}
+.bio {
+  text-wrap: wrap;
+  width: 50%;
+}
+.bio h5 {
   font-style: italic;
 }
