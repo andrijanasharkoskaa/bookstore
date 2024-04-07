@@ -1,7 +1,11 @@
 function About() {
   return (
     <>
-      <h1>This is my About section</h1>
+      <div className="catalog-title">
+        <div className="line"></div>
+        <h3 className="title"> About Us</h3>
+        <div className="line"></div>
+      </div>
     </>
   );
 }

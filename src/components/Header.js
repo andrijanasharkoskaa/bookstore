@@ -5,7 +5,7 @@ function Header() {
   const [cartItems, setCartItems] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
-  function addToCart(item) {
+  function addToCartFromHeader(item) {
     setCartItems([...cartItems, item]);
   }
 
