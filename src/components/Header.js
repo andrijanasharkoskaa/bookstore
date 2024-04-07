@@ -1,9 +1,23 @@
+import React, { useState } from "react";
+import CartModal from "../CartModal";
+
 function Header() {
+  const [cartItems, setCartItems] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+
+  function addToCart(item) {
+    setCartItems([...cartItems, item]);
+  }
+
+  function toggleModal() {
+    setShowModal(!showModal);
+  }
+
   return (
     <>
       <div className="header">
         <div className="logo">
-          <i class="fa-solid fa-book"></i>
+          <i className="fa-solid fa-book"></i>
           <span>Bookly</span>
         </div>
 
@@ -13,17 +27,23 @@ function Header() {
             className="input-field"
             placeholder="Search..."
           />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div className="cart">
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-user"></i>
+          <i className="fa-solid fa-heart"></i>
+          <i
+            className="fa-solid fa-cart-shopping"
+            onClick={toggleModal}
+            style={{ cursor: "pointer" }}
+          ></i>
+          {cartItems.length > 0 && (
+            <div className="cart-counter">{cartItems.length}</div>
+          )}
+          <i className="fa-solid fa-user"></i>
         </div>
       </div>
-
-      {/* Main part */}
+      {showModal && <CartModal cartItems={cartItems} onClose={toggleModal} />}
     </>
   );
 }
