@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CartModal from "../CartModal";
+import CartModal from "./CartModal";
 
 function Header() {
   const [cartItems, setCartItems] = useState([]);

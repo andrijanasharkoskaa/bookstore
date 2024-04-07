@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Book from "./Book";
-import CartModal from "../CartModal";
+import CartModal from "./CartModal";
 
 function Catalog() {
   const [cartItems, setCartItems] = useState([]);

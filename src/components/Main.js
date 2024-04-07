@@ -1,5 +1,4 @@
 import Info from "./Info";
-
 function Main() {
   return (
     <>
@@ -39,8 +38,6 @@ function Main() {
           </div>
         </div>
       </div>
-
-      <Info />
     </>
   );
 }
